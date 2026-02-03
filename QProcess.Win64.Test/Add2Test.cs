@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using NUnit.Framework;
 using Global;
-using static Global.EasyObjectClassic;
+//using static Global.EasyObjectClassic;
 
 // ReSharper disable once CheckNamespace
 namespace Test;
@@ -13,7 +13,7 @@ public class Add2Test
     [SetUp]
     public void Setup()
     {
-        Echo("Setup() called");
+        //Echo("Setup() called");
     }
 
     [Test]
