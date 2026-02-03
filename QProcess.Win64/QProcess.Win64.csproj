@@ -49,6 +49,9 @@
 	</ItemGroup>
 	<ItemGroup>
 		<None Include=".\README.md" Pack="true" PackagePath="" />
+		<None Include=".\QProcess_Win64.dll" Pack="true" PackagePath="lib/netstandard2.0/" />
+		<None Include=".\QProcess_Win64.dll" Pack="true" PackagePath="lib/net462/" />
+		<None Include=".\QProcess_Win64.dll" Pack="true" PackagePath="lib/net8.0/" />
 	</ItemGroup>
 	<ItemGroup Condition="'$(TargetFramework)' == 'netstandard2.0'">
 		<PackageReference Include="Microsoft.CSharp" Version="4.7.0" />
