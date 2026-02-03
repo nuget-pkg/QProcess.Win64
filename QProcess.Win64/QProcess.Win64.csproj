@@ -2,7 +2,7 @@
 	<PropertyGroup>
 		<LangVersion>latest</LangVersion>
 		<TargetFrameworks>netstandard2.0;net462;net8.0</TargetFrameworks>
-		<Version>2026.0203.2003.16</Version>
+		<Version>2026.0204.0701.03</Version>
 		<Nullable>enable</Nullable>
 		<ImplicitUsings>disable</ImplicitUsings>
 		<RootNamespace>QProcess.Win64</RootNamespace>
@@ -61,6 +61,6 @@
 		<PackageReference Include="System.Dynamic.Runtime" Version="4.3.0" />
 	</ItemGroup>
 	<ItemGroup>
-	  <PackageReference Include="EasyObject" Version="2026.202.442.19" />
+	  <PackageReference Include="EasyObject" Version="2026.204.653.18" />
 	</ItemGroup>
 </Project>
