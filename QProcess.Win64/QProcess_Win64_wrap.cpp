@@ -463,6 +463,39 @@ SWIGEXPORT int SWIGSTDCALL CSharp_Execute3(unsigned short * jarg1, unsigned shor
 }
 
 
+SWIGEXPORT int SWIGSTDCALL CSharp_Execute4(unsigned int jarg1, unsigned short * jarg2, unsigned short * jarg3, unsigned short * jarg4) {
+  int jresult ;
+  bool arg1 ;
+  std::wstring *arg2 = 0 ;
+  std::wstring *arg3 = 0 ;
+  std::wstring *arg4 = 0 ;
+  int result;
+  
+  arg1 = jarg1 ? true : false; 
+  if (!jarg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "null wstring", 0);
+    return 0;
+  }
+  std::wstring arg2_str(Swig_csharp_UTF16ToWString(jarg2));
+  arg2 = &arg2_str; 
+  if (!jarg3) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "null wstring", 0);
+    return 0;
+  }
+  std::wstring arg3_str(Swig_csharp_UTF16ToWString(jarg3));
+  arg3 = &arg3_str; 
+  if (!jarg4) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "null wstring", 0);
+    return 0;
+  }
+  std::wstring arg4_str(Swig_csharp_UTF16ToWString(jarg4));
+  arg4 = &arg4_str; 
+  result = (int)Execute4(arg1,(std::wstring const &)*arg2,(std::wstring const &)*arg3,(std::wstring const &)*arg4);
+  jresult = result; 
+  return jresult;
+}
+
+
 SWIGEXPORT void SWIGSTDCALL CSharp_Launch3(unsigned short * jarg1, unsigned short * jarg2, unsigned short * jarg3) {
   std::wstring *arg1 = 0 ;
   std::wstring *arg2 = 0 ;

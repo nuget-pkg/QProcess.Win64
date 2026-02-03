@@ -15,5 +15,6 @@ public class Win64
         if (cwd == null) cwd = "";
         Global.EasyObject.Log(new { exe = exe, args = args, cwd = cwd });
         QProcess_Win64.Launch3(exe, string.Join("\t", args), cwd);
+        //QProcess_Win64.Execute4(true, exe, string.Join("\t", args), cwd);
     }
 }

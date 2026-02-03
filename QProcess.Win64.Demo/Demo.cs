@@ -1,18 +1,7 @@
-﻿using System;
+﻿//css_nuget QProcess.Win64;
 using Global;
-//using static Global.EasyObjectClassic;
-using NUnit.Framework;
+using static Global.EasyObject;
 
-// ReSharper disable once CheckNamespace
-namespace Demo;
-
-// ReSharper disable once ArrangeTypeModifiers
-static class Program
-{
-    // ReSharper disable once ArrangeTypeMemberModifiers
-    static void Main(string[] args)
-    {
-        //Echo(new { args = args });
-        //Echo(QProcess.Win64.Add2(11, 22));
-   }
-}
+Echo(new { args });
+//QProcess.Win64.Execute("wget2", ["https://github.com/msys2/msys2-installer/releases/download/2025-12-13/msys2-x86_64-20251213.exe"], @"C:\ProgramData\home13\cs\process");
+QProcess.Win64.Launch("wget2", ["https://github.com/msys2/msys2-installer/releases/download/2025-12-13/msys2-x86_64-20251213.exe"], @"C:\ProgramData\home13\cs\process");

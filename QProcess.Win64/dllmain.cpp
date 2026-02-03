@@ -28,7 +28,7 @@ public:
     }
     virtual ~MyQt()
     {
-        delete this->app;
+        //delete this->app;
     }
 };
 
