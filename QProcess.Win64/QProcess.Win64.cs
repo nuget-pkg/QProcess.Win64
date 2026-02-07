@@ -1,5 +1,7 @@
 //css_inc QProcess.Win64.swig.cs
 //css_nuget EasyObject
+using System;
+
 namespace QProcess;
 
 public class Win64
@@ -22,6 +24,15 @@ public class Win64
         if (cwd == null) cwd = "";
         Global.EasyObject.Log(new { exe = exe, args = args, cwd = cwd });
         int exitCode = QProcess_Win64.Execute4(windowed, exe, string.Join("\t", args), cwd);
+        return exitCode;
+    }
+    public static int RunAndPause(bool windowed, string exe, string[] args, string? cwd = null)
+    {
+        if (cwd == null) cwd = "";
+        Global.EasyObject.Log(new { exe = exe, args = args, cwd = cwd });
+        int exitCode = QProcess_Win64.Execute4(windowed, exe, string.Join("\t", args), cwd);
+        Console.Error.Write("Press ENTER to continue: ");
+        Console.In.ReadLine();
         return exitCode;
     }
 }
