@@ -1,4 +1,4 @@
-﻿//css_nuget QProcess.Win64;
+?//+#nuget QProcess.Win64;
 using Global;
 using static Global.EasyObject;
 

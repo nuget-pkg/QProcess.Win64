@@ -1,5 +1,5 @@
-//css_inc QProcess.Win64.swig.cs
-//css_nuget EasyObject
+//+#inc QProcess.Win64.swig.cs
+//+#nuget EasyObject
 using System;
 
 namespace QProcess;
